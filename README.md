@@ -15,3 +15,5 @@ The included files here are:
 It's configured with a crontab like this:
 
 	0 8-14/2 * * * cronic /home/pi/capture-both.sh
+
+**NB**: Remember to set the camera to PTP mode to be able to control it from `gphoto2`.
