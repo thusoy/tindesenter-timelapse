@@ -3,6 +3,7 @@ import sys
 
 def take_single_picture(target):
     with picamera.PiCamera() as camera:
+        camera.resolution = (2592, 1944)
         camera.capture(target)
 
 
