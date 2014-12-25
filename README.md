@@ -9,11 +9,11 @@ The included files here are:
 
 **ssh-tunnel.conf**: The job starting the SSH tunnel to pengebingen.
 **capture-both.sh**: A script that takes a single picture from each of the cameras, and transfers them to pengebingen.
-**picam.py**: Used to take a single picture with the RPi camera.
 
 
 It's configured with a crontab like this:
 
-	0 8-14/2 * * * cronic /home/pi/capture-both.sh
+	55 8-14/2 * * * cronic /home/pi/capture-both.sh
 
 **NB**: Remember to set the camera to PTP mode to be able to control it from `gphoto2`.
+**NB2**: Also remember to set the pi's timezone using `sudo dpkg-reconfigure tzdata`, to have times in the crontab be executed when you think they'll be.
