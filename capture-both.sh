@@ -22,6 +22,9 @@ convert $target_dir/picam-$fileid.jpg -crop +85+0 -crop -90+0 -quality 100 $targ
 echo "Uploading images..."
 scp $target_dir/*-$fileid.jpg pengebingen:~/tarjei/Foto/Timelapse/Tindesenteret/RAW
 
+# Update latest image on web
+ssh pengebingen "cp tarjei/Foto/Timelapse/Tindesenteret/RAW/nikon-cropped-$fileid.jpg /srv/tindesenter-timelapse/latest.jpg"
+
 # If everything has succeeded so far, remove the local copies
 echo "Deleting local copies..."
 rm $target_dir/*-$fileid.jpg
