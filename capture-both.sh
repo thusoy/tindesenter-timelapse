@@ -4,7 +4,7 @@
 set -e
 
 # Where to store the images locally (without trailing slash)
-target_dir="/tmp"
+target_dir="/var/imgs"
 
 fileid=$(date +"%s")
 
