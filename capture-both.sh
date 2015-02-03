@@ -6,7 +6,9 @@ set -e
 # Where to store the images locally (without trailing slash)
 target_dir="/var/imgs"
 
-fileid=$(date +"%s")
+# Pass an argument to the script to override the photo id
+default_fileid=$(date +"%s")
+fileid=${1:-$default_fileid}
 
 # Capture the images
 /usr/local/bin/gphoto2 --capture-image-and-download --filename "$target_dir/nikon-$fileid.jpg" 2>&1
