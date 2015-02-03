@@ -14,6 +14,10 @@ The included files here are:
 It's configured with a crontab like this:
 
 	55 8-14/2 * * * cronic /home/pi/capture-both.sh
+	55 7-13/2 * * * cronic /home/pi/capture-both.sh $(date +"%s")-ext
+	25 7-14 * * * cronic /home/pi/capture-both.sh $(date +"%s")-ext
+	
+The two latter entries increases the total number of pictures taken to 16 each day, but given IDs that are easily filtered out from the originals.
 
 **NB**: Remember to set the camera to PTP mode to be able to control it from `gphoto2`.
 **NB2**: Also remember to set the pi's timezone using `sudo dpkg-reconfigure tzdata`, to have times in the crontab be executed when you think they'll be.
