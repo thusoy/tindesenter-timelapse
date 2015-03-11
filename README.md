@@ -7,8 +7,8 @@ SSH keys have been generated to make it capable of establishing a SSH tunnel to 
 
 The included files here are:
 
-**ssh-tunnel.conf**: The job starting the SSH tunnel to pengebingen.
-**capture-both.sh**: A script that takes a single picture from each of the cameras, and transfers them to pengebingen.
+**ssh-tunnel.conf**: The job starting the SSH tunnel to pengebingen.  
+**capture-both.sh**: A script that takes a single picture from each of the cameras, and transfers them to pengebingen.  
 
 
 It's configured with a crontab like this:
