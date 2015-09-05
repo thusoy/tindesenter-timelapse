@@ -3,7 +3,7 @@ Tindesenter timelapse
 
 A RPi is set up with gphoto2 connected to a Camera module and a Nikon D200, producing daily timelapses of construction of the tindesenter at Åndalsnes:
 
- - [Last week](https://ts.thusoy.com/tindesenteret-last-week.mp)
+ - [Last week](https://ts.thusoy.com/tindesenteret-last-week.mp4)
  - [Last month](https://ts.thusoy.com/tindesenteret-last-month.mp4)
  - [All time](https://ts.thusoy.com/tindesenteret-ext.mp4)
 
