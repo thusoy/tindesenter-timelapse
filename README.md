@@ -1,14 +1,18 @@
 Tindesenter timelapse
 =====================
 
-A RPi is set up with gphoto2 and upstart, connected to a Camera module and a Nikon D200.
+A RPi is set up with gphoto2 connected to a Camera module and a Nikon D200, producing daily timelapses of construction of the tindesenter at Åndalsnes:
 
-SSH keys have been generated to make it capable of establishing a SSH tunnel to tarjei's account on pengebingen.
+ - [Last week](https://ts.thusoy.com/tindesenteret-last-week.mp)
+ - [Last month](https://ts.thusoy.com/tindesenteret-last-month.mp4)
+ - [All time](https://ts.thusoy.com/tindesenteret-ext.mp4)
+
+Images are dumped to a fileserver immediately after capture over SSH. The fileserver generates the timelapses.
 
 The included files here are:
 
-**ssh-tunnel.conf**: The job starting the SSH tunnel to pengebingen.  
-**capture-both.sh**: A script that takes a single picture from each of the cameras, and transfers them to pengebingen.  
+**ssh-tunnel.conf**: The job starting the SSH tunnel to the fileserver.  
+**capture-both.sh**: A script that takes a single picture from each of the cameras, and transfers them to the fileserver.  
 
 
 It's configured with a crontab like this:
